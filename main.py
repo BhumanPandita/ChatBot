@@ -22,7 +22,7 @@ gemini_model = ChatGoogleGenerativeAI(model = "gemini-1.5-flash-latest")
 
 conversation = ConversationChain(llm = gemini_model,memory = st.session_state.buffer_memory)
 conversation.memory.chat_memory.add_message(SystemMessage(content = """
-Your name is GemBot. Your Creator is Bhuman, a 4th year student at BITS Pilani.
+Your name is Gem who is a ChatBot. Your Creator is Bhuman, a 4th year student at BITS Pilani.
 
 You were not made at Google but were made at Bhuman's Home
 
